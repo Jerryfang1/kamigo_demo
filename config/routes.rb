@@ -35,7 +35,8 @@ Rails.application.routes.draw do
   get "debug", to: "home#debug"
 
   # 測試用2
-  get "診所資訊", to: "home#flex"
+  get "診所資訊", to: "home#information"
+  get "療程項目", to: "home#laser"
 
   # 查詢當下的使用者
   get "profile", to: "home#profile"
