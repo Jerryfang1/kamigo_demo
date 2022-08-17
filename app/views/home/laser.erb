@@ -2,121 +2,85 @@
   "type": "flex",
   "altText": "this is a flex message",
   "contents": {
-    "type": "bubble",
-    "size": "mega",
-    "hero": {
-      "type": "image",
-      "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-      "size": "full",
-      "aspectRatio": "20:13",
-      "aspectMode": "cover",
-      "action": {
-        "type": "uri",
-        "uri": "http://linecorp.com/"
-      }
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "——— ∙ 診所資訊 ∙ ———",
-          "weight": "regular",
-          "size": "md",
-          "align": "center",
-          "gravity": "center",
-          "color": "#704214"
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "size": "kilo",
+        "hero": {
+          "type": "image",
+          "aspectMode": "cover",
+          "size": "full",
+          "aspectRatio": "20:9",
+          "url": "https://morningclinic.com.tw/wp-content/uploads/2022/08/line-icon-02.jpg"
         },
-        {
-          "type": "box",
-          "layout": "vertical",
-          "margin": "lg",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "spacing": "sm",
-              "contents": []
-            },
-            {
-              "type": "text",
-              "text": "Tel:06-2818688",
-              "color": "#000000"
-            },
-            {
-              "type": "text",
-              "text": "台南市北區西門路四段262號2樓"
-            }
-          ]
-        },
-        {
+        "body": {
           "type": "box",
           "layout": "vertical",
           "contents": [
             {
-              "type": "separator",
-              "margin": "md",
-              "color": "#000000"
-            }
-          ]
-        },
-        {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "週一 ~ 週六 11:00 ~ 20:00 ( 週二公休 )",
-              "size": "sm"
+              "type": "image",
+              "url": "https://morningclinic.com.tw/wp-content/uploads/2022/08/button02.jpg",
+              "aspectRatio": "30:6",
+              "aspectMode": "cover",
+              "size": "full",
+              "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "http://www.google.com/"
+              }
             },
             {
-              "type": "text",
-              "text": "週日 11:00~18:00",
-              "size": "sm"
+              "type": "image",
+              "url": "https://morningclinic.com.tw/wp-content/uploads/2022/08/button03.jpg",
+              "aspectRatio": "30:6",
+              "aspectMode": "cover",
+              "size": "full",
+              "margin": "sm",
+              "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "http://www.google.com/"
+              }
+            },
+            {
+              "type": "image",
+              "url": "https://morningclinic.com.tw/wp-content/uploads/2022/08/button01.jpg",
+              "aspectRatio": "30:6",
+              "aspectMode": "cover",
+              "size": "full",
+              "margin": "sm",
+              "action": {
+                "type": "uri",
+                "label": "action",
+                "uri": "http://www.google.com/"
+              }
+            },
+            {
+              "type": "filler"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "預約諮詢  ➔",
+                "uri": "http://www.google.com"
+              },
+              "style": "secondary",
+              "margin": "xl",
+              "gravity": "center",
+              "color": "#D2B48C"
             }
           ],
-          "paddingTop": "lg"
+          "background": {
+            "type": "linearGradient",
+            "angle": "0deg",
+            "endColor": "#ffffff",
+            "centerColor": "#FFEBCD",
+            "startColor": "#ffffff"
+          }
         }
-      ],
-      "backgroundColor": "#F5DEB3"
-    },
-    "footer": {
-      "type": "box",
-      "layout": "horizontal",
-      "spacing": "sm",
-      "contents": [
-        {
-          "type": "button",
-          "style": "primary",
-          "height": "sm",
-          "action": {
-            "type": "uri",
-            "label": "致電診所➝",
-            "uri": "http://www.google.com"
-          },
-          "gravity": "center",
-          "margin": "lg",
-          "color": "#CD853F"
-        },
-        {
-          "type": "button",
-          "style": "primary",
-          "height": "sm",
-          "action": {
-            "type": "uri",
-            "label": "地圖導航➝",
-            "uri": "http://www.google.com"
-          },
-          "color": "#CD853F",
-          "gravity": "center",
-          "margin": "xxl",
-          "offsetEnd": "lg"
-        }
-      ],
-      "flex": 0,
-      "backgroundColor": "#F5DEB3"
-    }
+      }
+    ]
   }
 }
