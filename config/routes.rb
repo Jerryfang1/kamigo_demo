@@ -34,6 +34,9 @@ Rails.application.routes.draw do
   get "test", to: "home#test"
   get "debug", to: "home#debug"
 
+  # 測試用
+  get "flex", to: "home#flex"
+
   # 查詢當下的使用者
   get "profile", to: "home#profile"
 
